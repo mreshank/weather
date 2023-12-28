@@ -70,6 +70,9 @@ main {
     background-color: color-mix(in hsl shorter hue, #35ddff 36%, #effcff 78%); 
     padding: 8% 25%;
 }
+/* @media screen and (max-width: 500px){
+    
+} */
 @media screen and (max-width: 720px){
     header {
         /* width: 100%; */
@@ -228,4 +231,40 @@ main {
 .otherDetail>h4 {
     margin: 0;
     font-size: 1.25em;
+}
+@media screen and (max-width: 720px){
+    main {
+        /* min-width: 480px; */
+        margin-left: 10% + (720px - 100vw);
+    }
+    .detailContainer>img {
+        margin: 1em 0.5em;
+        position: relative;
+        width: 3em;
+        height: 3em;
+    }
+    .detailContainer>h3 {
+        font-size: 1.75em;
+    }
+    .otherDetail>h4 {
+        font-size: 1.125em;
+    }
+}
+@media screen and (max-width: 480px){
+    main {
+        min-width: 480px;
+        margin-left: auto;
+    }
+    .detailContainer>img {
+        margin: 1em 0.5em;
+        position: relative;
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .detailContainer>h3 {
+        font-size: 1.5em;
+    }
+    .otherDetail>h4 {
+        font-size: 1em;
+    }
 }
