@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <main>
+        <div id="cityInput">
+            <form id="cityInput" action="">
+                <input type="text" id="getMyInput" name="city" placeholder="Enter your city...">
+            </form>
+            <div >
+                <input id="searchLogo" type="image" src="images/search.png" onclick="searchWeather()" alt="search icon">
+                <h3>Search</h3>
+            </div>
+        </div>
+        <div id="weatherDisplay">
+            <h2 id="currentTemperature"> 0.0°C </h2>
+            <h3 id="searchedCity"> no input </h3>
+            <div id="otherDetails">
+                <div id="otherDetailsInside">
+                <div id = "humidity" class = "otherDetail">
+                    <div class = "detailContainer">
+                        <img src="images/humidity.png" alt="humidity icon">
+                        <h3 id="humidityValue"> 0.0% </h3>
+                    </div>
+                    <h4>Humidity</h4>
+                </div>
+                <div id="wind" class = "otherDetail">
+                    <div class = "detailContainer">
+                        <img src="images/wind.png" alt="wind icon">
+                        <h3 id="windValue"> 0.0km/h </h3>
+                    </div>
+                    <h4>Wind</h4>
+                </div>
+                <div id = "pressure" class = "otherDetail">
+                    <div class = "detailContainer">
+                        <img src="images/pressure.png" alt="pressure icon">
+                        <h3 id="pressureValue"> 0.0hPa </h3>
+                    </div>
+                    <h4>Pressure</h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <main>
+        <form action="">
+            <input type="text" name="city" placeholder="City Name">
+            <button type="submit">Submit</button>
+        </form>
+        <div id=""></div>
+        <div id="weather-info"></div>
+    </main> -->
+    <!-- <script>
+        // Fetch weather data from API and update the weather-info div
+        function fetchWeatherData(city) {
+            // Make API request and handle the response
+            // Replace the API_URL with the actual API endpoint
+            fetch(`API_URL?city=${city}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Update the weather-info div with the weather data
+                    const weatherInfo = document.getElementById('weather-info');
+                    weatherInfo.innerHTML = `
+                        <h2>${data.city}</h2>
+                        <p>Temperature: ${data.temperature}°C</p>
+                        <p>Humidity: ${data.humidity}%</p>
+                        <p>Conditions: ${data.conditions}</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Error fetching weather data:', error);
+                });
+        }
+
+        // Handle form submission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const cityInput = document.querySelector('input[name="city"]');
+            const city = cityInput.value.trim();
+            if (city) {
+                fetchWeatherData(city);
+            }
+        });
+    </script> -->
+

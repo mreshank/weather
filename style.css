@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+body {
+    background-color: rgb(241, 248, 249);
+}
+main {
+    width: 75%;
+    min-width: 500px;
+    margin: 12cqmax;
+    border-radius: 5em;
+    box-shadow: 0 0 3em 0 rgba(0, 107, 117, 0.281);
+    /* border-color: #00313b97;
+    border-width: 500px; */
+    /* height: 98.28617vh;  */
+    background-color: aqua;
+    background-color: color-mix(in hsl shorter hue, #35ddff 36%, #effcff 78%); 
+    padding: 8% 25%;
+}
+@media screen and (max-width: 720px){
+    main {
+        /* width: 100%; */
+        margin: 12cqmax calc(43.5% - (12cqmax + 15%));
+        /* padding: 0; */
+    }
+    
+}
+
+#cityInput {
+    padding: 0.78em;
+    /* background-color: rgb(30, 255, 0); */
+    justify-content: center;
+}
+#cityInput>input {
+    box-sizing: border-box;
+    border-radius: 50em;
+    background-color: rgb(238, 254, 255);
+    min-height: 3em;
+    max-height: 4.8em;
+    padding: 0 2em;
+    margin: -0.4em 0;
+    font-size: 1.12em;
+}
+#cityInput>div {
+    width: 4.6em;
+    height: 4.6em;
+    border-radius: 50em;
+    text-align: center;
+    background-color: rgb(242, 254, 255);
+}
+#cityInput>div>h3 {
+    visibility: hidden;
+}
+#searchLogo {
+    margin: 1.25em;
+    width: 3em;
+    opacity: 90%;
+}
+@media screen and (max-width: 360px) {
+    #cityInput>input {
+        width: 80vw;
+    }
+    #cityInput>div {
+        width: 75vw;
+        height: 2.8em;
+        margin: 0 8% ;
+        display: flex;
+        border-radius: 1em;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.749);
+    }
+    #searchLogo {
+        margin: 0.25em 0.8em;
+        width: 2.2em;
+        height: 2.2em;
+        opacity: 90%;
+    }
+    #cityInput>div>h3 {
+        visibility: visible;
+        font-size: 1.4em;
+        margin: 0.4em 0;
+        opacity: 80%;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 1200px) {
+    #cityInput {
+        display: flex;
+    }
+    #cityInput>input {
+        width: 50vw;
+    }
+}
+@media screen and (min-width: 1201px) {
+    #cityInput {
+        display: flex;
+    }
+    #cityInput>input {
+        width: 600px;
+    }
+}
+
+
+
+#weatherDisplay {
+    text-align: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    /* padding: em; */
+    border-radius: 1.5em;
+    /* height: 9.5em; */
+    /* background-color: rgba(215, 249, 255, 0.343);
+    box-shadow: 0 0 1.5em 0 #e8faffd6; */
+}
+#weatherDisplay>h2 {
+    font-size: 5em;
+    margin: 0;
+}
+#weatherDisplay>h3 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+
+
+#otherDetails {
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(51, 0, 255); */
+}
+#otherDetailsInside {
+    display: flex;
+    min-width: 360px;
+    max-width: 1000px;
+    padding: 2em 8em;
+    justify-content: space-evenly;
+    /* background-color: rgb(255, 255, 0); */
+}
+#otherDetailsInside>h4 {
+    font-size: 15em;
+}
+.detailContainer {
+    display: flex;
+    /* background-color: chocolate; */
+}
+.detailContainer>img {
+    margin: 1em 0.5em;
+    position: relative;
+    width: 3.5em;
+    height: 3.5em;
+}
+.detailContainer>h3 {
+    font-size: 2em;
+}
+.otherDetail {
+    display: flex;
+    margin: 0 5%;
+    flex-direction: column;
+    /* background-color: rgb(255, 0, 255); */
+}
+.otherDetail>h4 {
+    margin: 0;
+    font-size: 1.25em;
+}
