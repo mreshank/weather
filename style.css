@@ -9,7 +9,7 @@ body {
 main {
     width: 75%;
     min-width: 500px;
-    margin: 12cqmax;
+    margin: 16vh 12cqmax;
     border-radius: 5em;
     box-shadow: 0 0 3em 0 rgba(0, 107, 117, 0.281);
     /* border-color: #00313b97;
@@ -22,7 +22,7 @@ main {
 @media screen and (max-width: 720px){
     main {
         /* width: 100%; */
-        margin: 12cqmax calc(43.5% - (12cqmax + 15%));
+        margin: 16vh calc(43.5% - (12cqmax + 15%));
         /* padding: 0; */
     }
     
