@@ -302,9 +302,9 @@ main {
         top: 1em;
     }
     main {
-        padding-top: 15%;
-        padding-bottom: 15%;
-        max-height: 62.5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        max-height: 100%;
     }
     #cityInput>input {
         width: 100%;
