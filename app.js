@@ -29,17 +29,16 @@ const getWeather = async(city) => {
     document.querySelector("#pressureValue").innerHTML = String(data["main"]["pressure"]).concat("hPa");
 } };
 
+function runFun() {
+    var enteredCity = document.querySelector("#getMyInput").value;
+    getWeather(enteredCity);
+    return false;
+}
+
 function searchWeather(event) { 
     var enteredCity = document.querySelector("#getMyInput").value;
     console.log(enteredCity);
     getWeather(enteredCity);
     event.preventDefault(); 
+    return false;
 }
-
-getMyInput.addEventListener("submit", function(event) {
-    console.log("Funtion Working !");
-        // var enteredCity = document.querySelector("#getMyInput").value;
-        // alert(city, "Entered");
-        // getWeather(city);
-        event.preventDefault(); 
-}, false );
